@@ -1,0 +1,281 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    border-radius: 7px;
+    background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+    background:white;
+    border-radius: 7px;
+}
+
+body {
+    background-color: black;
+    scrollbar-color:white;
+    scroll-behavior: auto;
+  
+   
+  
+}
+
+#containerMenu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.menu-Style , a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    transition:0.7s;
+    border-style: solid;
+    border-color: transparent;
+
+    
+}
+.menu-Style , a:hover {
+    color: orangered;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 4px;
+    transition:0.5s;
+    
+}
+
+#logo{
+    position: absolute;
+    left: 30px;
+    color: white;
+}
+#barrasLogo {
+    color: orangered;
+}
+
+#btnMenu {
+    display: none;
+    margin-top: -10px;
+    padding: 20px;
+}
+
+#nav1 {
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    right:35px;
+}
+
+/* ------------------- */
+
+#containerPrincipal {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 135px;
+    margin-top: 125px;
+
+
+    width:1000px;
+}
+
+#carrinhoLista {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 10px;
+
+    list-style: none;
+}
+
+#precoTotal {
+    margin-top: 100px;
+}
+
+
+.botoes {
+    width:170px;
+    height: 35px;
+    margin:auto;
+    text-align: center;
+    padding:7px;
+    margin-top: 25px;
+    cursor: pointer;
+
+    background-color: orangered;
+    border-radius: 9px;
+}
+.botoes:hover {
+    text-shadow: 2px 2px 1px black;
+}
+
+body {overflow-x: hidden;}
+    /* rodape */
+
+.rodape { 
+    background-color:white;
+    width:100%;
+    height: 70px;
+    margin-top: 210px;
+    color: black;
+    text-align: center;
+    padding:10px;
+    
+  
+}
+
+.rodape a {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.rodape p {
+    margin-top:15px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+
+
+
+@media screen and ( max-width: 1100px) { 
+
+    #containerPrincipal {
+        margin-left: -100px;
+       
+    }
+}
+
+@media screen and (max-width: 910px ) { /*button Hamburger Btn*/
+
+   
+
+    
+
+
+
+    /* Menu */
+
+
+    #btnMenu {
+        display:inline-block;
+        margin-top: -25px;
+        margin-right: -25px;
+    }
+
+    .itensPadrao {
+     
+        padding:10px;
+        margin-bottom: 50px;
+        align-items:center;
+     
+ }
+
+ .itensPadrao img {
+
+    width: 100%;
+     margin-bottom: 10px;
+     gap: 10px;
+     
+     
+ }
+
+ /*  --------- */
+ 
+ #nav1 li{
+     display: none; /* none */
+     text-align: center;
+ }
+
+#nav1 {        /* teste*/   
+    transition:0.5s;
+    
+}
+
+ .menuVisivel #nav1{
+    position: relative;
+    right:0px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    text-align: center;
+    margin-top:-35px;
+    background-color: rgb(31, 31, 31);
+    z-index: 9000;
+    width:100%;
+    height:100vh;
+ }   /*stylo quando apertar o botao pra deixar o menu visivel */
+
+ .menuVisivel #nav1 li{
+     display: inline-block; /* none */
+     text-align: center;
+     
+ }
+
+
+}
+
+
+
+@media screen and ( max-width: 840px) {
+
+    
+    
+
+     table th  {
+        color:orangered;
+        position:relative;
+        display: inline-block;
+        margin-left: 7px;
+        margin-right: 15px;
+        left: -205px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        
+        
+    }
+    table td  {
+        position:relative;
+        display: inline-block;
+        margin-left: 25px;
+        margin-right: 25px;
+        left: -230px;
+        margin-bottom: 5px;
+        font-size: 14px;
+
+}
+    #ajusteTamanho {
+        position:relative;
+        left: 50px;
+    }
+
+    #containerBtn {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        text-align:center;
+        align-items: center;
+        margin-left:-350px ;
+        margin-top: -35px;
+    
+    
+    
+    }
+}
+
+
+
+
